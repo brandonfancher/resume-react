@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
 
 const Footer = () => (
   <section className="o-section  t-section  o-section--footer">
@@ -108,7 +109,7 @@ const Footer = () => (
                     rel="noopener noreferrer"
                     className="c-social-button  t-social-button"
                   >
-                    <i className="fab  fa-lg  fa-facebook-f"></i>
+                    <FaFacebookF className="fab fa-lg" />
                   </a>
                 </li>
                 <li className="a-footer">
@@ -118,7 +119,7 @@ const Footer = () => (
                     rel="noopener noreferrer"
                     className="c-social-button  t-social-button"
                   >
-                    <i className="fab  fa-lg  fa-dribbble"></i>
+                    <FaDribbble className="fab fa-lg" />
                   </a>
                 </li>
                 <li className="a-footer">
@@ -128,7 +129,7 @@ const Footer = () => (
                     rel="noopener noreferrer"
                     className="c-social-button  t-social-button"
                   >
-                    <i className="fab  fa-lg  fa-twitter"></i>
+                    <FaTwitter className="fab fa-lg" />
                   </a>
                 </li>
               </ul>

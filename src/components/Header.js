@@ -1,5 +1,6 @@
 import React from "react";
 import avatar from "../assets/images/header/avatar.jpg";
+import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
 
 const Header = () => (
   <section className="o-section o-section--header  t-section  t-section--header">
@@ -50,7 +51,7 @@ const Header = () => (
                       rel="noopener noreferrer"
                       className="c-social-button  t-social-button"
                     >
-                      <i className="fab  fa-lg  fa-facebook-f"></i>
+                      <FaFacebookF className="fab fa-lg" />
                     </a>
                   </li>
                   <li className="a-header">
@@ -60,7 +61,7 @@ const Header = () => (
                       rel="noopener noreferrer"
                       className="c-social-button  t-social-button"
                     >
-                      <i className="fab  fa-lg  fa-dribbble"></i>
+                      <FaDribbble className="fab fa-lg" />
                     </a>
                   </li>
                   <li className="a-header">
@@ -70,7 +71,7 @@ const Header = () => (
                       rel="noopener noreferrer"
                       className="c-social-button  t-social-button"
                     >
-                      <i className="fab  fa-lg  fa-twitter"></i>
+                      <FaTwitter className="fab fa-lg" />
                     </a>
                   </li>
                 </ul>
