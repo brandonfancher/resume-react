@@ -1,4 +1,12 @@
 import React from "react";
+import bbc from "../assets/images/clients/bbc.png";
+import disney from "../assets/images/clients/disney.png";
+import github from "../assets/images/clients/github.png";
+import google from "../assets/images/clients/google.png";
+import html5 from "../assets/images/clients/html5.png";
+import kickstarter from "../assets/images/clients/kickstarter.png";
+import youtube from "../assets/images/clients/youtube.png";
+import vimeo from "../assets/images/clients/vimeo.png";
 
 const Clients = () => (
   <section className="o-section  t-section  ">
@@ -24,7 +32,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/bbc.png" alt="" />
+                <img src={bbc} alt="" />
               </a>
             </li>
             <li>
@@ -33,7 +41,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/disney.png" alt="" />
+                <img src={disney} alt="" />
               </a>
             </li>
             <li>
@@ -42,7 +50,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/github.png" alt="" />
+                <img src={github} alt="" />
               </a>
             </li>
             <li>
@@ -51,7 +59,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/google.png" alt="" />
+                <img src={google} alt="" />
               </a>
             </li>
             <li>
@@ -60,7 +68,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/html5.png" alt="" />
+                <img src={html5} alt="" />
               </a>
             </li>
             <li>
@@ -69,7 +77,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/kickstarter.png" alt="" />
+                <img src={kickstarter} alt="" />
               </a>
             </li>
             <li>
@@ -78,7 +86,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/youtube.png" alt="" />
+                <img src={youtube} alt="" />
               </a>
             </li>
             <li>
@@ -87,7 +95,7 @@ const Clients = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="assets/images/clients/vimeo.png" alt="" />
+                <img src={vimeo} alt="" />
               </a>
             </li>
           </ul>

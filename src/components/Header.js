@@ -1,4 +1,5 @@
 import React from "react";
+import avatar from "../assets/images/header/avatar.jpg";
 
 const Header = () => (
   <section className="o-section o-section--header  t-section  t-section--header">
@@ -12,11 +13,7 @@ const Header = () => (
             <div className="c-header__inner-header">
               <div className="c-header__avatar">
                 <div className="a-header  c-avatar">
-                  <img
-                    className="c-avatar__img"
-                    src="./assets/images/header/avatar.jpg"
-                    alt=""
-                  />
+                  <img className="c-avatar__img" src={avatar} alt="" />
                 </div>
               </div>
             </div>

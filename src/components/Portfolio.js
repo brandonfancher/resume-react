@@ -1,4 +1,10 @@
 import React from "react";
+import portfolio1 from "../assets/images/portfolio/1_thumb.jpg";
+import portfolio2 from "../assets/images/portfolio/2_full.jpg";
+import portfolio3 from "../assets/images/portfolio/3_thumb.jpg";
+import portfolio4 from "../assets/images/portfolio/4_thumb.jpg";
+import portfolio5 from "../assets/images/portfolio/5_thumb.jpg";
+import portfolio6 from "../assets/images/portfolio/6_full.jpg";
 
 const Portfolio = () => (
   <section className="o-section t-section">
@@ -26,7 +32,7 @@ const Portfolio = () => (
                 title="Musée du Louvre"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/1_thumb.jpg" alt="" />
+                <img src={portfolio1} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>Musée du Louvre</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
@@ -47,7 +53,7 @@ const Portfolio = () => (
                 title="Tunnel Effect"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/2_thumb.jpg" alt="" />
+                <img src={portfolio2} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>Tunnel Effect</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
@@ -68,7 +74,7 @@ const Portfolio = () => (
                 title="New York, New York"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/3_thumb.jpg" alt="" />
+                <img src={portfolio3} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>New York, New York</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
@@ -89,7 +95,7 @@ const Portfolio = () => (
                 title="Sky High"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/4_thumb.jpg" alt="" />
+                <img src={portfolio4} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>Sky High</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
@@ -110,7 +116,7 @@ const Portfolio = () => (
                 title="The Eiffel Tower"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/5_thumb.jpg" alt="" />
+                <img src={portfolio5} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>The Eiffel Tower</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
@@ -131,7 +137,7 @@ const Portfolio = () => (
                 title="Reaching the Clouds"
                 data-lightbox-gallery="portfolio"
               >
-                <img src="assets/images/portfolio/6_thumb.jpg" alt="" />
+                <img src={portfolio6} alt="" />
                 <div className="c-image-overlay__content">
                   <h3>Reaching the Clouds</h3>
                   <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
