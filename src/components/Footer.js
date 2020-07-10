@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import SocialButtons from "./SocialButtons";
 import ContactInfo from "./ContactInfo";
+import SiteTitle, { SiteTitleSize } from "./SiteTitle";
 
 const Footer = () => (
   <section className="o-section  t-section  o-section--footer">
@@ -24,16 +25,7 @@ const Footer = () => (
               <div className="c-footer__brand">
                 <div className="c-brand">
                   <div className="o-content__body">
-                    <h1 className="c-brand__title  t-title">
-                      <span className="c-brand__sizer  c-brand__sizer--sm">
-                        <span className="a-footer  c-brand__first-word  t-title__first-word">
-                          Brandon
-                        </span>
-                        <span className="a-footer  c-brand__second-word  t-title__second-word">
-                          Fancher
-                        </span>
-                      </span>
-                    </h1>
+                    <SiteTitle size={SiteTitleSize.SMALL} />
                   </div>
                 </div>
               </div>

@@ -2041,6 +2041,9 @@ img[height] {
   .c-brand__sizer--sm {
     font-size: 80%;
   }
+  .c-brand__sizer--lg {
+    font-size: 100%;
+  }
 }
 
 .c-avatar__img {

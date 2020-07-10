@@ -2,6 +2,7 @@ import React from "react";
 import avatar from "../assets/images/header/avatar.jpg";
 import SocialButtons from "./SocialButtons";
 import ContactInfo from "./ContactInfo";
+import SiteTitle from "./SiteTitle";
 
 const Header = () => (
   <section className="o-section o-section--header  t-section  t-section--header">
@@ -26,16 +27,7 @@ const Header = () => (
               <div className="c-header__top">
                 <div className="c-header__brand">
                   <div className="c-brand">
-                    <h1 className="c-brand__title  t-title">
-                      <span className="c-brand__sizer">
-                        <span className="a-header  c-brand__first-word  t-title__first-word">
-                          Brandon
-                        </span>
-                        <span className="a-header  c-brand__second-word  t-title__second-word">
-                          Fancher
-                        </span>
-                      </span>
-                    </h1>
+                    <SiteTitle />
                     <h2 className="a-header  c-brand__sub-title  t-sub-title">
                       <span className="c-brand__sizer">
                         Web Developer &amp; Front-end Expert
