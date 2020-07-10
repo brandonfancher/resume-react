@@ -1,12 +1,12 @@
 import React from "react";
-import bbc from "../assets/images/clients/bbc.png";
-import disney from "../assets/images/clients/disney.png";
-import github from "../assets/images/clients/github.png";
-import google from "../assets/images/clients/google.png";
-import html5 from "../assets/images/clients/html5.png";
-import kickstarter from "../assets/images/clients/kickstarter.png";
-import youtube from "../assets/images/clients/youtube.png";
-import vimeo from "../assets/images/clients/vimeo.png";
+import bbc from "../assets/images/clients/bbc@2x.png";
+import disney from "../assets/images/clients/disney@2x.png";
+import github from "../assets/images/clients/github@2x.png";
+import google from "../assets/images/clients/google@2x.png";
+import html5 from "../assets/images/clients/html5@2x.png";
+import kickstarter from "../assets/images/clients/kickstarter@2x.png";
+import youtube from "../assets/images/clients/youtube@2x.png";
+import vimeo from "../assets/images/clients/vimeo@2x.png";
 
 const Clients = () => (
   <section className="o-section  t-section  ">
