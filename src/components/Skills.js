@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 // see main.js for source of skills animations
 
@@ -9,14 +10,7 @@ const Skills = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Skills</h2>
-            <div className="o-content__body  o-section__description">
-              Progress bars, anyone?
-            </div>
-          </div>
-        </header>
+        <SectionHeader heading="Skills" description="Progress bars, anyone?" />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

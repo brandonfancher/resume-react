@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 import portfolio1 from "../assets/images/portfolio/1_thumb.jpg";
 import portfolio2 from "../assets/images/portfolio/2_full.jpg";
 import portfolio3 from "../assets/images/portfolio/3_thumb.jpg";
@@ -13,14 +14,10 @@ const Portfolio = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Portfolio</h2>
-            <div className="o-content__body  o-section__description">
-              Here it gets interesting.
-            </div>
-          </div>
-        </header>
+        <SectionHeader
+          heading="Portfolio"
+          description="Here it gets interesting."
+        />
 
         <div className="o-section__content  t-section__content  o-section__full-bottom-space">
           <div className="o-grid  o-grid--gallery">

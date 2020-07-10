@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 import bbc from "../assets/images/clients/bbc@2x.png";
 import disney from "../assets/images/clients/disney@2x.png";
 import github from "../assets/images/clients/github@2x.png";
@@ -15,14 +16,7 @@ const Clients = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Clients</h2>
-            <div className="o-content__body  o-section__description">
-              Happy people.
-            </div>
-          </div>
-        </header>
+        <SectionHeader heading="Clients" description="Happy people." />
 
         <div className="o-section__content  t-section__content  ">
           <ul className="c-clients  o-content">

@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Expertise = () => (
   <section className="o-section  t-section  ">
@@ -7,14 +8,10 @@ const Expertise = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Expertise</h2>
-            <div className="o-content__body  o-section__description">
-              Batman would be jealous.
-            </div>
-          </div>
-        </header>
+        <SectionHeader
+          heading="Expertise"
+          description="Batman would be jealous."
+        />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

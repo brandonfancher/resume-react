@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Awards = () => (
   <section className="o-section  t-section  ">
@@ -7,14 +8,7 @@ const Awards = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Awards</h2>
-            <div className="o-content__body  o-section__description">
-              Happy times!
-            </div>
-          </div>
-        </header>
+        <SectionHeader heading="Awards" description="Happy times!" />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

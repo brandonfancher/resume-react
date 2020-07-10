@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
+import SectionHeader from "./SectionHeader";
 
 const Footer = () => (
   <section className="o-section  t-section  o-section--footer">
@@ -8,14 +9,7 @@ const Footer = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Contact</h2>
-            <div className="o-content__body  o-section__description">
-              Call me, maybe.
-            </div>
-          </div>
-        </header>
+        <SectionHeader heading="Contact" description="Call me, maybe." />
 
         <div className="o-section__content  t-section__content  ">
           <div className="c-footer__contact">

@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Intro = () => (
   <section className="o-section  t-section  ">
@@ -7,14 +8,7 @@ const Intro = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <header className="o-section__header  t-section__header">
-          <div className="o-content">
-            <h2 className="o-section__heading">Intro</h2>
-            <div className="o-content__body  o-section__description">
-              What I am all about.
-            </div>
-          </div>
-        </header>
+        <SectionHeader heading="Intro" description="What I am all about." />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-content">
