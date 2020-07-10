@@ -1891,7 +1891,7 @@ img[height] {
   text-align: center;
 }
 
-.c-header__social-buttons {
+.c-header__top .c-social-buttons {
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -1944,7 +1944,7 @@ img[height] {
     text-align: left;
     margin-bottom: 0;
   }
-  .c-header__social-buttons {
+  .c-header__top .c-social-buttons {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1975,7 +1975,7 @@ img[height] {
   .c-footer__brand {
     margin-bottom: 0;
   }
-  .c-footer__social-buttons {
+  .c-footer__bottom .c-social-buttons {
     position: absolute;
     right: 0;
     bottom: 0;

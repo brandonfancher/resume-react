@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
 import SectionHeader from "./SectionHeader";
+import SocialButtons from "./SocialButtons";
 
 const Footer = () => (
   <section className="o-section  t-section  o-section--footer">
@@ -94,39 +94,7 @@ const Footer = () => (
                   </div>
                 </div>
               </div>
-
-              <ul className="c-footer__social-buttons  c-social-buttons  o-content__body">
-                <li className="a-footer">
-                  <a
-                    href="https://www.facebook.com/RuvenThemes/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="c-social-button  t-social-button"
-                  >
-                    <FaFacebookF className="fab fa-lg" />
-                  </a>
-                </li>
-                <li className="a-footer">
-                  <a
-                    href="https://dribbble.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="c-social-button  t-social-button"
-                  >
-                    <FaDribbble className="fab fa-lg" />
-                  </a>
-                </li>
-                <li className="a-footer">
-                  <a
-                    href="https://twitter.com/_Ruven"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="c-social-button  t-social-button"
-                  >
-                    <FaTwitter className="fab fa-lg" />
-                  </a>
-                </li>
-              </ul>
+              <SocialButtons />
             </div>
           </div>
         </div>

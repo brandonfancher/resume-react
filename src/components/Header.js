@@ -1,6 +1,6 @@
 import React from "react";
 import avatar from "../assets/images/header/avatar.jpg";
-import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
+import SocialButtons from "./SocialButtons";
 
 const Header = () => (
   <section className="o-section o-section--header  t-section  t-section--header">
@@ -43,38 +43,7 @@ const Header = () => (
                   </div>
                 </div>
 
-                <ul className="c-header__social-buttons  c-social-buttons">
-                  <li className="a-header">
-                    <a
-                      href="https://www.facebook.com/RuvenThemes/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FaFacebookF className="fab fa-lg" />
-                    </a>
-                  </li>
-                  <li className="a-header">
-                    <a
-                      href="https://dribbble.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FaDribbble className="fab fa-lg" />
-                    </a>
-                  </li>
-                  <li className="a-header">
-                    <a
-                      href="https://twitter.com/_Ruven"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="c-social-button  t-social-button"
-                    >
-                      <FaTwitter className="fab fa-lg" />
-                    </a>
-                  </li>
-                </ul>
+                <SocialButtons />
               </div>
 
               <div className="c-header__contact">
