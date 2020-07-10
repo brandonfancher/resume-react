@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
-export const useScrollReveal = (target, config) => {
+export const useScrollReveal = (target, config = {}) => {
   useEffect(() => {
     const defaultConfig = {
       duration: 1500,
