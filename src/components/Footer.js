@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import SocialButtons from "./SocialButtons";
+import ContactInfo from "./ContactInfo";
 
 const Footer = () => (
   <section className="o-section  t-section  o-section--footer">
@@ -13,65 +14,7 @@ const Footer = () => (
 
         <div className="o-section__content  t-section__content  ">
           <div className="c-footer__contact">
-            <div className="o-grid">
-              <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                <div className="o-content">
-                  <div className="o-content__body">
-                    <h4>Location</h4>
-                    <address>Portland, OR</address>
-                  </div>
-                </div>
-              </div>
-
-              <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                <div className="o-content">
-                  <div className="o-content__body">
-                    <h4>Phone</h4>
-                    <p>534.456.886</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                <div className="o-content">
-                  <div className="o-content__body">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="t-link-container"
-                    >
-                      <h4>Web</h4>
-                      <p>
-                        <span className="t-link-container__item--blended">
-                          ruventhemes.com
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="o-grid__col-md-3  o-grid__col-sm-6">
-                <div className="o-content">
-                  <div className="o-content__body">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="t-link-container"
-                    >
-                      <h4>Email</h4>
-                      <p>
-                        <span className="t-link-container__item--blended">
-                          hello@example.com
-                        </span>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ContactInfo />
           </div>
 
           <hr className="c-footer__contact-divider" />
