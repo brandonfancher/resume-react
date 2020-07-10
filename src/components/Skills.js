@@ -1,5 +1,7 @@
 import React from "react";
 
+// see main.js for source of skills animations
+
 const Skills = () => (
   <section className="o-section  t-section  ">
     <div className="o-section__header-bg  t-section__header"></div>
