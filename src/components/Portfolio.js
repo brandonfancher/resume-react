@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SectionHeader from "./SectionHeader";
 import portfolio1 from "../assets/images/portfolio/1_thumb.jpg";
 import portfolio2 from "../assets/images/portfolio/2_full.jpg";
@@ -6,6 +7,29 @@ import portfolio3 from "../assets/images/portfolio/3_thumb.jpg";
 import portfolio4 from "../assets/images/portfolio/4_thumb.jpg";
 import portfolio5 from "../assets/images/portfolio/5_thumb.jpg";
 import portfolio6 from "../assets/images/portfolio/6_full.jpg";
+
+const PortfolioPiece = ({ title, description, image }) => (
+  <div className="o-grid__col-sm-6">
+    <a
+      className="c-image-overlay  t-image-overlay  js-lightbox"
+      href="#"
+      title={title}
+    >
+      <img src={image} alt="" />
+      <div className="c-image-overlay__content">
+        <h3>{title}</h3>
+        <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+        <p>{description}</p>
+      </div>
+    </a>
+  </div>
+);
+
+PortfolioPiece.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  image: PropTypes.any.isRequired,
+};
 
 const Portfolio = () => (
   <section className="o-section t-section">
@@ -21,131 +45,48 @@ const Portfolio = () => (
 
         <div className="o-section__content  t-section__content  o-section__full-bottom-space">
           <div className="o-grid  o-grid--gallery">
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/1_full.jpg"
-                data-lightbox-hidpi=""
-                title="Musée du Louvre"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio1} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>Musée du Louvre</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+            <PortfolioPiece
+              title="Musée du Louvre"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/2_full.jpg"
-                data-lightbox-hidpi=""
-                title="Tunnel Effect"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio2} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>Tunnel Effect</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+                    adipiscing elit."
+              image={portfolio1}
+            />
+            <PortfolioPiece
+              title="Tunnel Effect"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/3_full.jpg"
-                data-lightbox-hidpi=""
-                title="New York, New York"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio3} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>New York, New York</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+                    adipiscing elit."
+              image={portfolio2}
+            />
+            <PortfolioPiece
+              title="New York, New York"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/4_full.jpg"
-                data-lightbox-hidpi=""
-                title="Sky High"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio4} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>Sky High</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+                    adipiscing elit."
+              image={portfolio3}
+            />
+            <PortfolioPiece
+              title="Sky High"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/5_full.jpg"
-                data-lightbox-hidpi=""
-                title="The Eiffel Tower"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio5} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>The Eiffel Tower</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+                    adipiscing elit."
+              image={portfolio4}
+            />
+            <PortfolioPiece
+              title="The Eiffel Tower"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
-
-            <div className="o-grid__col-sm-6">
-              <a
-                className="c-image-overlay  t-image-overlay  js-lightbox"
-                href="assets/images/portfolio/6_full.jpg"
-                data-lightbox-hidpi=""
-                title="Reaching the Clouds"
-                data-lightbox-gallery="portfolio"
-              >
-                <img src={portfolio6} alt="" />
-                <div className="c-image-overlay__content">
-                  <h3>Reaching the Clouds</h3>
-                  <hr className="c-image-overlay__deco-line  t-image-overlay__deco-line" />
-                  <p>
-                    Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+                    adipiscing elit."
+              image={portfolio5}
+            />
+            <PortfolioPiece
+              title="Reaching the Clouds"
+              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
-                    adipiscing elit.
-                  </p>
-                </div>
-              </a>
-            </div>
+                    adipiscing elit."
+              image={portfolio6}
+            />
           </div>
         </div>
       </div>

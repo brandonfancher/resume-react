@@ -1,5 +1,37 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SectionHeader from "./SectionHeader";
+
+const Profile = ({ link, title, description }) => (
+  <div className="o-grid__col-xl-4  o-grid__col-sm-6">
+    <div className="o-content">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="t-link-container"
+      >
+        <div className="o-media  o-media--block">
+          <div className="o-media__figure">
+            <div className="c-profile__icon">
+              <i className="fab  fa-lg  fa-envira"></i>
+            </div>
+          </div>
+          <div className="o-media__body  o-content__body">
+            <h3 className="t-link-container__item">{title}</h3>
+            <p>{description}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+);
+
+Profile.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 const Profiles = () => (
   <section className="o-section  t-section  ">
@@ -12,149 +44,36 @@ const Profiles = () => (
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="http://themeforest.net/user/ruventhemes/portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-envira"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">Themeforest</h3>
-                      <p>
-                        An overview of the themes and templates that I sell.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="https://github.com/hatra-e/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-github-alt"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">GitHub</h3>
-                      <p>All my open source projects for you analyze.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="http://wordpress.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-medium"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">Medium</h3>
-                      <p>
-                        Yes. I'm also a blogger and here you find my writings.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="https://dribbble.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-dribbble"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">Dribbble</h3>
-                      <p>
-                        Whenever a design is finalized, it lands right here.
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="https://www.flickr.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-flickr"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">Flickr</h3>
-                      <p>A selection of photos I shot throughout the years.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="o-grid__col-xl-4  o-grid__col-sm-6">
-              <div className="o-content">
-                <a
-                  href="http://www.deviantart.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="t-link-container"
-                >
-                  <div className="o-media  o-media--block">
-                    <div className="o-media__figure">
-                      <div className="c-profile__icon">
-                        <i className="fab  fa-lg  fa-deviantart"></i>
-                      </div>
-                    </div>
-                    <div className="o-media__body  o-content__body">
-                      <h3 className="t-link-container__item">DeviantArt</h3>
-                      <p>A place for my sketches and drawings.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+            <Profile
+              link="http://themeforest.net/user/ruventhemes/portfolio"
+              title="Themeforest"
+              description="An overview of the themes and templates that I sell."
+            />
+            <Profile
+              link="https://github.com/hatra-e/"
+              title="GitHub"
+              description="All my open source projects for you analyze."
+            />
+            <Profile
+              link="http://wordpress.com"
+              title="Medium"
+              description="Yes. I'm also a blogger and here you find my writings."
+            />
+            <Profile
+              link="https://dribbble.com"
+              title="Dribbble"
+              description="Whenever a design is finalized, it lands right here."
+            />
+            <Profile
+              link="https://www.flickr.com"
+              title="Flickr"
+              description="A selection of photos I shot throughout the years."
+            />
+            <Profile
+              link="http://www.deviantart.com"
+              title="DeviantArt"
+              description="A place for my sketches and drawings."
+            />
           </div>
         </div>
       </div>
