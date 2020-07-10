@@ -6,11 +6,22 @@ export const SiteTitleSize = {
   LARGE: "lg",
 };
 
-const SiteTitle = ({ size }) => (
+export const SiteTitleLocation = {
+  HEADER: "header",
+  FOOTER: "footer",
+};
+
+const SiteTitle = ({ size, location }) => (
   <h1 className="c-brand__title  t-title">
     <span className={`c-brand__sizer  c-brand__sizer--${size}`}>
-      <span className="c-brand__first-word  t-title__first-word">Brandon</span>
-      <span className="c-brand__second-word  t-title__second-word">
+      <span
+        className={`c-brand__first-word  t-title__first-word a-${location}`}
+      >
+        Brandon
+      </span>
+      <span
+        className={`c-brand__second-word  t-title__second-word a-${location}`}
+      >
         Fancher
       </span>
     </span>
@@ -19,6 +30,7 @@ const SiteTitle = ({ size }) => (
 
 SiteTitle.propTypes = {
   size: PropTypes.oneOf(Object.values(SiteTitleSize)).isRequired,
+  location: PropTypes.oneOf(Object.values(SiteTitleLocation)).isRequired,
 };
 
 SiteTitle.defaultProps = {

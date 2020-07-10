@@ -19,7 +19,7 @@ const Intro = () => (
                   Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In
                   nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
                   <a href="#" target="_blank">
-                    pretium
+                    {` `}pretium
                   </a>
                   , ligula sollicitudin laoreet viverra, tortor libero sodales
                   leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut

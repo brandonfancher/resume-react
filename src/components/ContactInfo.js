@@ -1,26 +1,33 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const ContactInfoItem = ({ children }) => (
+export const ContactInfoLocation = {
+  HEADER: "header",
+  FOOTER: "footer",
+  NONE: "none",
+};
+
+const ContactInfoItem = ({ children, location }) => (
   <div className="o-grid__col-md-3  o-grid__col-sm-6">
-    <div className="o-content">
+    <div className={`o-content a-${location}`}>
       <div className="o-content__body">{children}</div>
     </div>
   </div>
 );
 
-const ContactInfo = () => (
+const ContactInfo = ({ location }) => (
   <div className="o-grid">
-    <ContactInfoItem>
+    <ContactInfoItem location={location}>
       <h4>Location</h4>
       <address>Portland, OR</address>
     </ContactInfoItem>
 
-    <ContactInfoItem>
+    <ContactInfoItem location={location}>
       <h4>Phone</h4>
       <p>534.456.886</p>
     </ContactInfoItem>
 
-    <ContactInfoItem>
+    <ContactInfoItem location={location}>
       <a href="#" target="_blank" className="t-link-container">
         <h4>Web</h4>
         <p>
@@ -31,7 +38,7 @@ const ContactInfo = () => (
       </a>
     </ContactInfoItem>
 
-    <ContactInfoItem>
+    <ContactInfoItem location={location}>
       <a href="#" target="_blank" className="t-link-container">
         <h4>Email</h4>
         <p>
@@ -43,5 +50,13 @@ const ContactInfo = () => (
     </ContactInfoItem>
   </div>
 );
+
+ContactInfo.propTypes = {
+  location: PropTypes.oneOf(Object.values(ContactInfoLocation)).isRequired,
+};
+
+ContactInfo.defaultProps = {
+  location: ContactInfoLocation.NONE,
+};
 
 export default ContactInfo;

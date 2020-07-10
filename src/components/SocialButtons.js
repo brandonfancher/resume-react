@@ -1,8 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
 
-const SocialButton = ({ children, link }) => (
-  <li>
+export const SocialButtonsLocation = {
+  HEADER: "header",
+  FOOTER: "footer",
+};
+
+const SocialButton = ({ children, link, location }) => (
+  <li className={`a-${location}`}>
     <a
       href={link}
       target="_blank"
@@ -14,18 +20,25 @@ const SocialButton = ({ children, link }) => (
   </li>
 );
 
-const SocialButtons = () => (
+const SocialButtons = ({ location }) => (
   <ul className="c-social-buttons  o-content__body">
-    <SocialButton link="https://www.facebook.com/RuvenThemes/">
+    <SocialButton
+      link="https://www.facebook.com/RuvenThemes/"
+      location={location}
+    >
       <FaFacebookF className="fab fa-lg" />
     </SocialButton>
-    <SocialButton link="https://dribbble.com/">
+    <SocialButton link="https://dribbble.com/" location={location}>
       <FaDribbble className="fab fa-lg" />
     </SocialButton>
-    <SocialButton link="https://twitter.com/_Ruven">
+    <SocialButton link="https://twitter.com/_Ruven" location={location}>
       <FaTwitter className="fab fa-lg" />
     </SocialButton>
   </ul>
 );
+
+SocialButtons.propTypes = {
+  location: PropTypes.oneOf(Object.values(SocialButtonsLocation)).isRequired,
+};
 
 export default SocialButtons;
