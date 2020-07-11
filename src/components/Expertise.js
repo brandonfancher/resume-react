@@ -29,10 +29,7 @@ const Expertise = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader
-          heading="Expertise"
-          description="Batman would be jealous."
-        />
+        <SectionHeader heading="Expertise" description="Placeholder" />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

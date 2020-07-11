@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaFacebookF, FaDribbble, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export const SocialButtonsLocation = {
   HEADER: "header",
@@ -29,17 +29,17 @@ SocialButton.propTypes = {
 const SocialButtons = ({ location }) => (
   <ul className="c-social-buttons  o-content__body">
     <SocialButton
-      link="https://www.facebook.com/RuvenThemes/"
+      link="https://linkedin.com/in/brandonfancher"
       location={location}
-      icon={FaFacebookF}
+      icon={FaLinkedin}
     />
     <SocialButton
-      link="https://dribbble.com/"
+      link="https://github.com/brandonfancher"
       location={location}
-      icon={FaDribbble}
+      icon={FaGithub}
     />
     <SocialButton
-      link="https://twitter.com/_Ruven"
+      link="https://twitter.com/brandonfancher"
       location={location}
       icon={FaTwitter}
     />

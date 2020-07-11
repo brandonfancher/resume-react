@@ -38,7 +38,7 @@ const Header = () => {
                       <SiteTitle location={SiteTitleLocation.HEADER} />
                       <h2 className="a-header  c-brand__sub-title  t-sub-title">
                         <span className="c-brand__sizer">
-                          Web Developer &amp; Front-end Expert
+                          Leader, Problem Solver, Web &amp; Mobile Developer
                         </span>
                       </h2>
                     </div>

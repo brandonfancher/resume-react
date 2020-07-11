@@ -26,7 +26,7 @@ const Awards = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader heading="Awards" description="Happy times!" />
+        <SectionHeader heading="Awards" description="Placeholder" />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

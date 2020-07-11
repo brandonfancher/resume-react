@@ -38,10 +38,7 @@ const Portfolio = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader
-          heading="Portfolio"
-          description="Here it gets interesting."
-        />
+        <SectionHeader heading="Portfolio" description="Placeholder" />
 
         <div className="o-section__content  t-section__content  o-section__full-bottom-space">
           <div className="o-grid  o-grid--gallery">

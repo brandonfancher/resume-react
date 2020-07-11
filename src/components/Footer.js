@@ -15,7 +15,7 @@ const Footer = () => {
 
       <div className="o-container">
         <div className="o-section__container">
-          <SectionHeader heading="Contact" description="Call me, maybe." />
+          <SectionHeader heading="Contact" description="Let's connect!" />
 
           <div className="o-section__content  t-section__content  ">
             <div className="c-footer__contact">

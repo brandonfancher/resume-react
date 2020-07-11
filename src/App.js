@@ -24,10 +24,10 @@ function App() {
       <div className="c-main-container  js-main-container">
         <Header />
         <Intro />
-        <Expertise />
-        <Skills />
         <Experience />
         <Education />
+        <Expertise />
+        <Skills />
         <Profiles />
         <Awards />
         <Portfolio />

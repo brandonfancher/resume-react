@@ -49,7 +49,7 @@ const Skills = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader heading="Skills" description="Progress bars, anyone?" />
+        <SectionHeader heading="Skills" description="Placeholder" />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-grid">

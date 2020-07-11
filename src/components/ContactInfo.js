@@ -8,7 +8,7 @@ export const ContactInfoLocation = {
 };
 
 const ContactInfoItem = ({ children, location }) => (
-  <div className="o-grid__col-md-3  o-grid__col-sm-6">
+  <div className="o-grid__col-md-4">
     <div className={`o-content a-${location}`}>
       <div className="o-content__body">{children}</div>
     </div>
@@ -19,31 +19,25 @@ const ContactInfo = ({ location }) => (
   <div className="o-grid">
     <ContactInfoItem location={location}>
       <h4>Location</h4>
-      <address>Portland, OR</address>
+      <address>Blacksburg, VA USA</address>
     </ContactInfoItem>
 
     <ContactInfoItem location={location}>
       <h4>Phone</h4>
-      <p>534.456.886</p>
+      <p>+1 (704) 778-1945</p>
     </ContactInfoItem>
 
     <ContactInfoItem location={location}>
-      <a href="#" target="_blank" className="t-link-container">
-        <h4>Web</h4>
-        <p>
-          <span className="t-link-container__item--blended">
-            ruventhemes.com
-          </span>
-        </p>
-      </a>
-    </ContactInfoItem>
-
-    <ContactInfoItem location={location}>
-      <a href="#" target="_blank" className="t-link-container">
+      <a
+        href="mailto:brandonfancher@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="t-link-container"
+      >
         <h4>Email</h4>
         <p>
           <span className="t-link-container__item--blended">
-            hello@example.com
+            brandonfancher@gmail.com
           </span>
         </p>
       </a>

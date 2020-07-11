@@ -30,7 +30,7 @@ const Clients = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader heading="Clients" description="Happy people." />
+        <SectionHeader heading="Clients" description="Placeholder" />
 
         <div className="o-section__content  t-section__content  ">
           <ul className="c-clients  o-content">

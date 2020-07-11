@@ -8,34 +8,33 @@ const Intro = () => (
 
     <div className="o-container">
       <div className="o-section__container">
-        <SectionHeader heading="Intro" description="What I am all about." />
+        <SectionHeader heading="About Me" description="What I do and why." />
 
         <div className="o-section__content  t-section__content  ">
           <div className="o-content">
             <div className="c-intro">
               <div className="o-content__body">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In
-                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                  <a href="#" target="_blank">
-                    {` `}pretium
-                  </a>
-                  , ligula sollicitudin laoreet viverra, tortor libero sodales
-                  leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut
-                  justo. Suspendisse potenti. Nulla vitae mauris non felis
-                  mollis faucibus.
+                  I am a manager and full-stack web and mobile developer with
+                  blockchain experience.
                 </p>
                 <p>
-                  Sed egestas, ante et vulputate volutpat, eros pede semper est,
-                  vitae luctus metus libero eu augue. Morbi purus libero,
-                  faucibus adipiscing, commodo quis, gravida id, est. Sed
-                  lectus. Praesent elementum hendrerit tortor. Sed semper lorem
-                  at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi
-                  neque euismod dui, eu pulvinar nunc sapien ornare nisl.
-                  Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed,
-                  urna. Fusce lacinia arcu et nulla. Nulla vitae mauris non
-                  felis mollis.
+                  I believe in the power of decentralized technologies to usher
+                  in a better, more just and equitable world and to level the
+                  economic playing field for all people. That’s a future I want
+                  to work toward.
+                </p>
+                <p>
+                  I currently lead a team of native iOS and Android developers
+                  building first-class user experiences. As a developer I work
+                  primarily with JavaScript, both on the front end and the back
+                  end, web and mobile. I’ve also done work in Swift, Python,
+                  Ruby and Java.
+                </p>
+                <p>
+                  I co-founded the React Meetup in Charlotte, NC, and am active
+                  in tech and crypto communities. I’m always looking for ways to
+                  create and contribute.
                 </p>
               </div>
             </div>
