@@ -7,7 +7,7 @@ export const SocialButtonsLocation = {
   FOOTER: "footer",
 };
 
-const SocialButton = ({ children, link, location }) => (
+const SocialButton = ({ link, location, icon: Icon }) => (
   <li className={`a-${location}`}>
     <a
       href={link}
@@ -15,25 +15,34 @@ const SocialButton = ({ children, link, location }) => (
       rel="noopener noreferrer"
       className="c-social-button  t-social-button"
     >
-      {children}
+      <Icon className="fab fa-lg" style={{ marginTop: 6 }} />
     </a>
   </li>
 );
+
+SocialButton.propTypes = {
+  link: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  icon: PropTypes.func.isRequired,
+};
 
 const SocialButtons = ({ location }) => (
   <ul className="c-social-buttons  o-content__body">
     <SocialButton
       link="https://www.facebook.com/RuvenThemes/"
       location={location}
-    >
-      <FaFacebookF className="fab fa-lg" />
-    </SocialButton>
-    <SocialButton link="https://dribbble.com/" location={location}>
-      <FaDribbble className="fab fa-lg" />
-    </SocialButton>
-    <SocialButton link="https://twitter.com/_Ruven" location={location}>
-      <FaTwitter className="fab fa-lg" />
-    </SocialButton>
+      icon={FaFacebookF}
+    />
+    <SocialButton
+      link="https://dribbble.com/"
+      location={location}
+      icon={FaDribbble}
+    />
+    <SocialButton
+      link="https://twitter.com/_Ruven"
+      location={location}
+      icon={FaTwitter}
+    />
   </ul>
 );
 

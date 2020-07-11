@@ -3,7 +3,7 @@ import { useScrollReveal } from "../hooks";
 import SocialButtons, { SocialButtonsLocation } from "./SocialButtons";
 import ContactInfo, { ContactInfoLocation } from "./ContactInfo";
 import SiteTitle, { SiteTitleLocation } from "./SiteTitle";
-import avatar from "../assets/images/header/avatar.jpg";
+import avatar from "../assets/images/header/brandon-fancher-headshot-by-richard-israel.jpg";
 
 const Header = () => {
   useScrollReveal(".a-header", {
