@@ -1,6 +1,8 @@
 /**
  * THEMES.DARK
  */
+$accent-color: #e0a80d;
+
 /* Body */
 @media (prefers-color-scheme: dark) {
   body {
@@ -38,7 +40,7 @@
   a,
   .t-link-container .t-link-container__item,
   .t-link-container:hover .t-link-container__item--blended {
-    color: #e0a80d;
+    color: $accent-color;
   }
 
   /* Hover Links */
@@ -63,18 +65,18 @@
   /* Primary Color */
   .t-primary-color,
   .t-primary-color-line {
-    color: #e0a80d;
+    color: $accent-color;
   }
 
   .t-primary-bg,
   .t-primary-color-line {
-    background: #e0a80d;
+    background: $accent-color;
   }
 
   /* Preloader */
   .t-preloader__spinner:not(:required):before {
-    border-top-color: #e0a80d;
-    border-bottom-color: #e0a80d;
+    border-top-color: $accent-color;
+    border-bottom-color: $accent-color;
   }
 
   /* Brand Colors */
@@ -83,7 +85,7 @@
   }
 
   .t-title__second-word {
-    color: #e0a80d;
+    color: $accent-color;
   }
 
   .t-sub-title {
@@ -141,7 +143,7 @@
   .t-social-button:hover .far,
   .t-social-button:hover .fal,
   .t-social-button:hover .fab {
-    color: #e0a80d;
+    color: $accent-color;
   }
 
   /* Image Overlay */

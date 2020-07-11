@@ -1,6 +1,9 @@
 /**
  * THEMES.LIGHT
  */
+
+$accent-color: #f8bb10;
+
 /* Body */
 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
   body {
@@ -38,7 +41,7 @@
   a,
   .t-link-container .t-link-container__item,
   .t-link-container:hover .t-link-container__item--blended {
-    color: #f8bb10;
+    color: $accent-color;
   }
 
   /* Hover Links */
@@ -46,7 +49,7 @@
   a:focus,
   a:active,
   .t-link-container:hover .t-link-container__item {
-    color: #e0a707;
+    color: $accent-color;
   }
 
   /* Horizontal Rulers */
@@ -63,18 +66,18 @@
   /* Primary Color */
   .t-primary-color,
   .t-primary-color-line {
-    color: #f8bb10;
+    color: $accent-color;
   }
 
   .t-primary-bg,
   .t-primary-color-line {
-    background: #f8bb10;
+    background: $accent-color;
   }
 
   /* Preloader */
   .t-preloader__spinner:not(:required):before {
-    border-top-color: #f8bb10;
-    border-bottom-color: #f8bb10;
+    border-top-color: $accent-color;
+    border-bottom-color: $accent-color;
   }
 
   /* Brand Colors */
@@ -83,7 +86,7 @@
   }
 
   .t-title__second-word {
-    color: #f8bb10;
+    color: $accent-color;
   }
 
   .t-sub-title {
@@ -141,7 +144,7 @@
   .t-social-button:hover .far,
   .t-social-button:hover .fal,
   .t-social-button:hover .fab {
-    color: #f8bb10;
+    color: $accent-color;
   }
 
   /* Image Overlay */
