@@ -11,7 +11,8 @@ import Portfolio from "./components/Portfolio";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import "./assets/css/main.css";
-import "./assets/css/themes.dark.css";
+import "./assets/css/themes.light.scss";
+import "./assets/css/themes.dark.scss";
 
 function App() {
   return (
