@@ -44,17 +44,15 @@ Skill.propTypes = {
 
 const Skills = () => (
   <Section heading="Skills" description="Placeholder">
-    <div className="o-section__content  t-section__content  ">
-      <div className="o-grid">
-        <Skill skill="Photoshop" percent={80} />
-        <Skill skill="Illustrator" percent={75} />
-        <Skill skill="GIT" percent={70} />
-        <Skill skill="After Effects" percent={65} />
-        <Skill skill="Sketch" percent={90} />
-        <Skill skill="CSS3 Animation" percent={50} />
-        <Skill skill="Pagespeed Insights" percent={85} />
-        <Skill skill="SEO" percent={95} />
-      </div>
+    <div className="o-grid">
+      <Skill skill="Photoshop" percent={80} />
+      <Skill skill="Illustrator" percent={75} />
+      <Skill skill="GIT" percent={70} />
+      <Skill skill="After Effects" percent={65} />
+      <Skill skill="Sketch" percent={90} />
+      <Skill skill="CSS3 Animation" percent={50} />
+      <Skill skill="Pagespeed Insights" percent={85} />
+      <Skill skill="SEO" percent={95} />
     </div>
   </Section>
 );

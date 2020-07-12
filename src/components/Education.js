@@ -4,7 +4,7 @@ import TimelineItem from "./TimelineItem";
 import Section from "./Section";
 
 const Education = () => (
-  <Section heading="Education">
+  <Section heading="Education" wrapperClasses="u-pt-0">
     <Timeline ends={false}>
       <TimelineItem
         timeframe="2009"

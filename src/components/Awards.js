@@ -21,24 +21,22 @@ Award.propTypes = {
 
 const Awards = () => (
   <Section heading="Awards" description="Placeholder">
-    <div className="o-section__content  t-section__content  ">
-      <div className="o-grid">
-        <Award
-          title="Unicorn Developer Award 2016"
-          description="Lorem ipsum dolor sit amet, justo eget porttitor mauris sit
+    <div className="o-grid">
+      <Award
+        title="Unicorn Developer Award 2016"
+        description="Lorem ipsum dolor sit amet, justo eget porttitor mauris sit
                     amet felis. Neque id cursus faucibus."
-        />
-        <Award
-          title="Website of the Year Award 2015"
-          description="Praesent dapibus dolor sit amet, justo eget porttitor mauris
+      />
+      <Award
+        title="Website of the Year Award 2015"
+        description="Praesent dapibus dolor sit amet, justo eget porttitor mauris
                     sit amet. Neque id cursus faucibus."
-        />
-        <Award
-          title="1st Place at CSShacker Conference"
-          description="Lorem ipsum dolor sit amet, justo eget porttitor mauris sit
+      />
+      <Award
+        title="1st Place at CSShacker Conference"
+        description="Lorem ipsum dolor sit amet, justo eget porttitor mauris sit
                     amet felis. Neque id cursus faucibus."
-        />
-      </div>
+      />
     </div>
   </Section>
 );

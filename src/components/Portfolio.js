@@ -32,52 +32,54 @@ PortfolioPiece.propTypes = {
 };
 
 const Portfolio = () => (
-  <Section heading="Portfolio" description="Placeholder">
-    <div className="o-section__content  t-section__content  o-section__full-bottom-space">
-      <div className="o-grid  o-grid--gallery">
-        <PortfolioPiece
-          title="Musée du Louvre"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+  <Section
+    heading="Portfolio"
+    description="Placeholder"
+    wrapperClasses="o-section__full-bottom-space"
+  >
+    <div className="o-grid  o-grid--gallery">
+      <PortfolioPiece
+        title="Musée du Louvre"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio1}
-        />
-        <PortfolioPiece
-          title="Tunnel Effect"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+        image={portfolio1}
+      />
+      <PortfolioPiece
+        title="Tunnel Effect"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio2}
-        />
-        <PortfolioPiece
-          title="New York, New York"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+        image={portfolio2}
+      />
+      <PortfolioPiece
+        title="New York, New York"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio3}
-        />
-        <PortfolioPiece
-          title="Sky High"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+        image={portfolio3}
+      />
+      <PortfolioPiece
+        title="Sky High"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio4}
-        />
-        <PortfolioPiece
-          title="The Eiffel Tower"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+        image={portfolio4}
+      />
+      <PortfolioPiece
+        title="The Eiffel Tower"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio5}
-        />
-        <PortfolioPiece
-          title="Reaching the Clouds"
-          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+        image={portfolio5}
+      />
+      <PortfolioPiece
+        title="Reaching the Clouds"
+        description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-          image={portfolio6}
-        />
-      </div>
+        image={portfolio6}
+      />
     </div>
   </Section>
 );

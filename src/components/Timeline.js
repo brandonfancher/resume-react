@@ -5,26 +5,19 @@ import classNames from "classnames";
 const Timeline = ({ begins, ends, children }) => (
   <div
     className={classNames({
-      "o-section__content": true,
-      "t-section__content": true,
-      "u-pt-0": !ends,
-      "u-pb-0": !begins,
+      "o-section__container": true,
+      "o-content": begins,
     })}
   >
     <div
       className={classNames({
-        "o-section__container": true,
-        "o-content": begins,
+        "c-timeline": true,
+        "t-border-color": true,
+        "o-section__full-top-space": !ends,
       })}
     >
-      <div
-        className={`c-timeline  t-border-color ${
-          ends ? "" : "o-section__full-top-space"
-        }`}
-      >
-        {begins && <div className="c-timeline__end  t-border-color"></div>}
-        {children}
-      </div>
+      {begins && <div className="c-timeline__end  t-border-color"></div>}
+      {children}
     </div>
   </div>
 );

@@ -25,18 +25,16 @@ Client.propTypes = {
 
 const Clients = () => (
   <Section heading="Clients" description="Placeholder">
-    <div className="o-section__content  t-section__content  ">
-      <ul className="c-clients  o-content">
-        <Client link="http://example.com" image={bbc} />
-        <Client link="http://example.com" image={disney} />
-        <Client link="http://example.com" image={github} />
-        <Client link="http://example.com" image={google} />
-        <Client link="http://example.com" image={html5} />
-        <Client link="http://example.com" image={kickstarter} />
-        <Client link="http://example.com" image={youtube} />
-        <Client link="http://example.com" image={vimeo} />
-      </ul>
-    </div>
+    <ul className="c-clients  o-content">
+      <Client link="http://example.com" image={bbc} />
+      <Client link="http://example.com" image={disney} />
+      <Client link="http://example.com" image={github} />
+      <Client link="http://example.com" image={google} />
+      <Client link="http://example.com" image={html5} />
+      <Client link="http://example.com" image={kickstarter} />
+      <Client link="http://example.com" image={youtube} />
+      <Client link="http://example.com" image={vimeo} />
+    </ul>
   </Section>
 );
 
