@@ -1,10 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import Section from "./Section";
 
 const Skill = ({ skill, percent }) => {
   const ref = useRef();
   const onScreen = useOnScreen(ref, "-20px");
+  const [animated, setAnimated] = useState(false);
+
+  if (!animated) {
+    if (onScreen) setAnimated(true);
+  }
 
   return (
     <div className="o-grid__col-sm-6">
@@ -25,10 +31,13 @@ const Skill = ({ skill, percent }) => {
           className="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text"
         >
           <div
-            className={`a-progress-bar  c-progress-bar__filler  t-primary-bg ${
-              onScreen ? "in-view" : ""
-            }`}
-            style={{ width: `${onScreen ? percent : 0}%` }}
+            className={classNames(
+              "a-progress-bar",
+              "c-progress-bar__filler",
+              "t-primary-bg",
+              { "in-view": onScreen }
+            )}
+            style={{ width: `${onScreen || animated ? percent : 0}%` }}
             data-percent={percent}
           />
         </div>
