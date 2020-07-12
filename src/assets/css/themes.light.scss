@@ -1,9 +1,8 @@
+@import "variables";
+
 /**
  * THEMES.LIGHT
  */
-
-// $accent-color: #4780ae;
-$accent-color: rgb(232, 135, 58);
 
 /* Body */
 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {

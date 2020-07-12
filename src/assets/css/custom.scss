@@ -1,0 +1,20 @@
+@import "variables";
+
+/**
+ * CUSTOM CSS
+ *
+ * Here you can add your custom CSS code.
+ */
+
+.c-timeline__item {
+  ul {
+    margin-left: 2rem;
+  }
+  .c-work__heading a {
+    color: #727272;
+    &:hover {
+      color: $accent-color;
+      cursor: pointer;
+    }
+  }
+}
