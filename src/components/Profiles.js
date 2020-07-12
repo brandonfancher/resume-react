@@ -8,7 +8,7 @@ import {
   FaFlickr,
   FaDeviantart,
 } from "react-icons/fa";
-import SectionHeader from "./SectionHeader";
+import Section from "./Section";
 
 const Profile = ({ link, title, description, icon: Icon }) => (
   <div className="o-grid__col-xl-4  o-grid__col-sm-6">
@@ -42,57 +42,48 @@ Profile.propTypes = {
 };
 
 const Profiles = () => (
-  <section className="o-section  t-section  ">
-    <div className="o-section__header-bg  t-section__header"></div>
-    <div className="o-section__content-bg  t-section__content"></div>
-
-    <div className="o-container">
-      <div className="o-section__container">
-        <SectionHeader heading="Profiles" description="Placeholder" />
-
-        <div className="o-section__content  t-section__content  ">
-          <div className="o-grid">
-            <Profile
-              link="http://themeforest.net/user/ruventhemes/portfolio"
-              title="Themeforest"
-              description="An overview of the themes and templates that I sell."
-              icon={FaEnvira}
-            />
-            <Profile
-              link="https://github.com/hatra-e/"
-              title="GitHub"
-              description="All my open source projects for you analyze."
-              icon={FaGithubAlt}
-            />
-            <Profile
-              link="http://wordpress.com"
-              title="Medium"
-              description="Yes. I'm also a blogger and here you find my writings."
-              icon={FaMedium}
-            />
-            <Profile
-              link="https://dribbble.com"
-              title="Dribbble"
-              description="Whenever a design is finalized, it lands right here."
-              icon={FaDribbble}
-            />
-            <Profile
-              link="https://www.flickr.com"
-              title="Flickr"
-              description="A selection of photos I shot throughout the years."
-              icon={FaFlickr}
-            />
-            <Profile
-              link="http://www.deviantart.com"
-              title="DeviantArt"
-              description="A place for my sketches and drawings."
-              icon={FaDeviantart}
-            />
-          </div>
-        </div>
+  <Section heading="Profiles" description="Placeholder">
+    <div className="o-section__content  t-section__content  ">
+      <div className="o-grid">
+        <Profile
+          link="http://themeforest.net/user/ruventhemes/portfolio"
+          title="Themeforest"
+          description="An overview of the themes and templates that I sell."
+          icon={FaEnvira}
+        />
+        <Profile
+          link="https://github.com/hatra-e/"
+          title="GitHub"
+          description="All my open source projects for you analyze."
+          icon={FaGithubAlt}
+        />
+        <Profile
+          link="http://wordpress.com"
+          title="Medium"
+          description="Yes. I'm also a blogger and here you find my writings."
+          icon={FaMedium}
+        />
+        <Profile
+          link="https://dribbble.com"
+          title="Dribbble"
+          description="Whenever a design is finalized, it lands right here."
+          icon={FaDribbble}
+        />
+        <Profile
+          link="https://www.flickr.com"
+          title="Flickr"
+          description="A selection of photos I shot throughout the years."
+          icon={FaFlickr}
+        />
+        <Profile
+          link="http://www.deviantart.com"
+          title="DeviantArt"
+          description="A place for my sketches and drawings."
+          icon={FaDeviantart}
+        />
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Profiles;

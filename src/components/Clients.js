@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SectionHeader from "./SectionHeader";
+import Section from "./Section";
 import bbc from "../assets/images/clients/bbc@2x.png";
 import disney from "../assets/images/clients/disney@2x.png";
 import github from "../assets/images/clients/github@2x.png";
@@ -24,29 +24,20 @@ Client.propTypes = {
 };
 
 const Clients = () => (
-  <section className="o-section  t-section  ">
-    <div className="o-section__header-bg  t-section__header"></div>
-    <div className="o-section__content-bg  t-section__content"></div>
-
-    <div className="o-container">
-      <div className="o-section__container">
-        <SectionHeader heading="Clients" description="Placeholder" />
-
-        <div className="o-section__content  t-section__content  ">
-          <ul className="c-clients  o-content">
-            <Client link="http://example.com" image={bbc} />
-            <Client link="http://example.com" image={disney} />
-            <Client link="http://example.com" image={github} />
-            <Client link="http://example.com" image={google} />
-            <Client link="http://example.com" image={html5} />
-            <Client link="http://example.com" image={kickstarter} />
-            <Client link="http://example.com" image={youtube} />
-            <Client link="http://example.com" image={vimeo} />
-          </ul>
-        </div>
-      </div>
+  <Section heading="Clients" description="Placeholder">
+    <div className="o-section__content  t-section__content  ">
+      <ul className="c-clients  o-content">
+        <Client link="http://example.com" image={bbc} />
+        <Client link="http://example.com" image={disney} />
+        <Client link="http://example.com" image={github} />
+        <Client link="http://example.com" image={google} />
+        <Client link="http://example.com" image={html5} />
+        <Client link="http://example.com" image={kickstarter} />
+        <Client link="http://example.com" image={youtube} />
+        <Client link="http://example.com" image={vimeo} />
+      </ul>
     </div>
-  </section>
+  </Section>
 );
 
 export default Clients;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import SectionHeader from "./SectionHeader";
+import Section from "./Section";
 import portfolio1 from "../assets/images/portfolio/1_thumb.jpg";
 import portfolio2 from "../assets/images/portfolio/2_full.jpg";
 import portfolio3 from "../assets/images/portfolio/3_thumb.jpg";
@@ -32,63 +32,54 @@ PortfolioPiece.propTypes = {
 };
 
 const Portfolio = () => (
-  <section className="o-section t-section">
-    <div className="o-section__header-bg  t-section__header"></div>
-    <div className="o-section__content-bg  t-section__content"></div>
-
-    <div className="o-container">
-      <div className="o-section__container">
-        <SectionHeader heading="Portfolio" description="Placeholder" />
-
-        <div className="o-section__content  t-section__content  o-section__full-bottom-space">
-          <div className="o-grid  o-grid--gallery">
-            <PortfolioPiece
-              title="Musée du Louvre"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+  <Section heading="Portfolio" description="Placeholder">
+    <div className="o-section__content  t-section__content  o-section__full-bottom-space">
+      <div className="o-grid  o-grid--gallery">
+        <PortfolioPiece
+          title="Musée du Louvre"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio1}
-            />
-            <PortfolioPiece
-              title="Tunnel Effect"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+          image={portfolio1}
+        />
+        <PortfolioPiece
+          title="Tunnel Effect"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio2}
-            />
-            <PortfolioPiece
-              title="New York, New York"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+          image={portfolio2}
+        />
+        <PortfolioPiece
+          title="New York, New York"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio3}
-            />
-            <PortfolioPiece
-              title="Sky High"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+          image={portfolio3}
+        />
+        <PortfolioPiece
+          title="Sky High"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio4}
-            />
-            <PortfolioPiece
-              title="The Eiffel Tower"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+          image={portfolio4}
+        />
+        <PortfolioPiece
+          title="The Eiffel Tower"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio5}
-            />
-            <PortfolioPiece
-              title="Reaching the Clouds"
-              description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
+          image={portfolio5}
+        />
+        <PortfolioPiece
+          title="Reaching the Clouds"
+          description="Fusce lacinia arcu et nulla. Nulla vitae mauris non felis
                     mollis faucibus. Lorem ipsum dolor sit amet, consectetuer
                     adipiscing elit."
-              image={portfolio6}
-            />
-          </div>
-        </div>
+          image={portfolio6}
+        />
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Portfolio;

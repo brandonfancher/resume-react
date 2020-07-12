@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import SectionHeader from "./SectionHeader";
+import Section from "./Section";
 
 const Skill = ({ skill, percent }) => {
   const ref = useRef();
@@ -43,29 +43,20 @@ Skill.propTypes = {
 };
 
 const Skills = () => (
-  <section className="o-section  t-section  ">
-    <div className="o-section__header-bg  t-section__header"></div>
-    <div className="o-section__content-bg  t-section__content"></div>
-
-    <div className="o-container">
-      <div className="o-section__container">
-        <SectionHeader heading="Skills" description="Placeholder" />
-
-        <div className="o-section__content  t-section__content  ">
-          <div className="o-grid">
-            <Skill skill="Photoshop" percent={80} />
-            <Skill skill="Illustrator" percent={75} />
-            <Skill skill="GIT" percent={70} />
-            <Skill skill="After Effects" percent={65} />
-            <Skill skill="Sketch" percent={90} />
-            <Skill skill="CSS3 Animation" percent={50} />
-            <Skill skill="Pagespeed Insights" percent={85} />
-            <Skill skill="SEO" percent={95} />
-          </div>
-        </div>
+  <Section heading="Skills" description="Placeholder">
+    <div className="o-section__content  t-section__content  ">
+      <div className="o-grid">
+        <Skill skill="Photoshop" percent={80} />
+        <Skill skill="Illustrator" percent={75} />
+        <Skill skill="GIT" percent={70} />
+        <Skill skill="After Effects" percent={65} />
+        <Skill skill="Sketch" percent={90} />
+        <Skill skill="CSS3 Animation" percent={50} />
+        <Skill skill="Pagespeed Insights" percent={85} />
+        <Skill skill="SEO" percent={95} />
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Skills;
