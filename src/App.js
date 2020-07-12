@@ -26,10 +26,10 @@ function App() {
       <div className="c-main-container  js-main-container">
         <Header />
         <Intro />
+        <Expertise />
         <Experience />
         <Education />
         <Volunteer />
-        <Expertise />
         <Skills />
         <Profiles />
         <Awards />

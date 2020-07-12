@@ -2,7 +2,7 @@ import React from "react";
 import Section from "./Section";
 
 const Intro = () => (
-  <Section heading="About Me" description="What I do and why.">
+  <Section heading="About Me" description="An introduction.">
     <div className="o-content">
       <div className="c-intro">
         <div className="o-content__body">
