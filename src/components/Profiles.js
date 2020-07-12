@@ -45,40 +45,22 @@ const Profiles = () => (
   <Section heading="Profiles" description="Placeholder">
     <div className="o-grid">
       <Profile
-        link="http://themeforest.net/user/ruventhemes/portfolio"
-        title="Themeforest"
-        description="An overview of the themes and templates that I sell."
-        icon={FaEnvira}
-      />
-      <Profile
-        link="https://github.com/hatra-e/"
+        link="https://github.com/brandonfancher/"
         title="GitHub"
         description="All my open source projects for you analyze."
         icon={FaGithubAlt}
+      />
+      <Profile
+        link="http://themeforest.net"
+        title="Themeforest"
+        description="An overview of the themes and templates that I sell."
+        icon={FaEnvira}
       />
       <Profile
         link="http://wordpress.com"
         title="Medium"
         description="Yes. I'm also a blogger and here you find my writings."
         icon={FaMedium}
-      />
-      <Profile
-        link="https://dribbble.com"
-        title="Dribbble"
-        description="Whenever a design is finalized, it lands right here."
-        icon={FaDribbble}
-      />
-      <Profile
-        link="https://www.flickr.com"
-        title="Flickr"
-        description="A selection of photos I shot throughout the years."
-        icon={FaFlickr}
-      />
-      <Profile
-        link="http://www.deviantart.com"
-        title="DeviantArt"
-        description="A place for my sketches and drawings."
-        icon={FaDeviantart}
       />
     </div>
   </Section>

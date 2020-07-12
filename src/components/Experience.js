@@ -14,12 +14,48 @@ const Experience = () => (
         location="Blacksburg, VA USA"
       >
         <p>
-          Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
-          aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis
-          vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor
-          libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis.
-          Ut justo. Suspendisse potenti.
+          Block.one is a producer of scalable, high-performance, open-source
+          blockchain software and user-facing applications that build upon
+          blockchain and smart contracts.
         </p>
+        <ul>
+          <li>
+            Scaled the mobile team from two to 12 native iOS and Android
+            developers.
+          </li>
+          <li>
+            Proposed and architected, and organized development, delivery and
+            documentation of multiple products, including{" "}
+            <a
+              href="https://eos.io/news/eosio-labs-release-the-universal-authenticator-library-ual-increasing-the-accessibility-of-blockchain-applications/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              blockchain authentication libraries
+            </a>
+            , integrations with secure cryptographic signing hardware, and{" "}
+            <a
+              href="https://eos.io/news/eosio-software-release-native-sdks-for-swift-and-java/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Swift and Java blockchain SDKs
+            </a>
+            .
+          </li>
+          <li>
+            Organized and led development of native iOS and Android apps for a
+            new{" "}
+            <a
+              href="https://voice.com/learn-more/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              social network
+            </a>{" "}
+            built on EOSIO blockchain technology.
+          </li>
+        </ul>
       </TimelineItem>
       <TimelineItem
         timeframe="Apr 2018 &ndash; Aug 2019"
@@ -29,12 +65,33 @@ const Experience = () => (
         location="Blacksburg, VA USA"
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-          hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet
-          vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-          laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor
-          eu nibh. Nullam mollis.
+          Block.one is a producer of scalable, high-performance, open-source
+          blockchain software and user-facing applications that build upon
+          blockchain and smart contracts.
         </p>
+        <ul>
+          <li>Hired as a React web developer; I innovated and excelled.</li>
+          <li>
+            Continually adopted more responsibility; became de facto team lead
+            for a small mobile team due to my prior mobile experience in React
+            Native.
+          </li>
+          <li>Facilitated agile scrum ceremonies.</li>
+          <li>Consistently promoted and defended the user experience.</li>
+          <li>
+            Spearheaded, architected and authored protocols, transports and
+            specifications for inter-platform communication with our mobile
+            applications.
+          </li>
+          <li>
+            Architected and wrote platform-agnostic JavaScript libraries
+            designed to be leveraged natively by iOS applications over
+            JavaScriptCore.
+          </li>
+          <li>
+            Became an internally recognized thought leader and influencer.
+          </li>
+        </ul>
       </TimelineItem>
       <TimelineItem
         timeframe="Dec 2015 &ndash; Apr 2018"
@@ -71,22 +128,10 @@ const Experience = () => (
         <p>
           Choice Translating's services include translation, software and
           website localization, international brand validation, and interpreting
-          services in over 200 languages.
+          services in over 200 languages. I automated processes, managed
+          internationalization (i18n) and localization (l10n) projects, and
+          oversaw production and delivery for global market research projects.
         </p>
-        <ul>
-          <li>
-            Automated project workflows, vendor management, accounting
-            activities, and client deliverables.
-          </li>
-          <li>
-            Identified and executed efficient solutions leveraging
-            internationalization (i18n) and localization (l10n) best practices.
-          </li>
-          <li>
-            Oversaw day-to-day production and delivery of global market research
-            projects involving teams of linguistic specialists around the world.
-          </li>
-        </ul>
       </TimelineItem>
     </Timeline>
   </Section>
