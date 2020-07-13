@@ -1,13 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  FaEnvira,
-  FaGithubAlt,
-  FaMedium,
-  FaDribbble,
-  FaFlickr,
-  FaDeviantart,
-} from "react-icons/fa";
+import { FaEnvira, FaGithubAlt, FaMedium } from "react-icons/fa";
 import Section from "./Section";
 
 const Profile = ({ link, title, description, icon: Icon }) => (
