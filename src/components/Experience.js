@@ -21,7 +21,7 @@ const Experience = () => (
         <ul>
           <li>
             Scaled the mobile team from two to 12 native iOS and Android
-            developers.
+            developers spanning multiple projects.
           </li>
           <li>
             Proposed and architected, and organized development, delivery and
@@ -72,7 +72,7 @@ const Experience = () => (
         <ul>
           <li>Hired as a React web developer; I innovated and excelled.</li>
           <li>
-            Continually adopted more responsibility; became de facto team lead
+            Continually assumed more responsibility; became de facto team lead
             for a small mobile team due to my prior mobile experience in React
             Native.
           </li>
@@ -95,7 +95,7 @@ const Experience = () => (
       </TimelineItem>
       <TimelineItem
         timeframe="Dec 2015 &ndash; Apr 2018"
-        heading="Levvel.io"
+        heading="Levvel"
         link="https://www.levvel.io/"
         title="Consultant &amp; Full-stack Developer"
         location="Charlotte, NC USA"
