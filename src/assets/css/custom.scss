@@ -12,6 +12,9 @@
   }
   .c-work__heading a {
     color: #727272;
+    @media (prefers-color-scheme: dark) {
+      color: #a4a5a6;
+    }
     &:hover {
       color: $accent-color;
       cursor: pointer;

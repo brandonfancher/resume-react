@@ -7,24 +7,15 @@ const Intro = () => (
       <div className="c-intro">
         <div className="o-content__body">
           <p>
-            I am a manager and full-stack web and mobile developer with
-            blockchain experience.
+            I am a leader, manager and full-stack developer with a passion for
+            building and delivering beautiful and compelling products and user
+            experiences.
           </p>
           <p>
-            I believe in the power of decentralized technologies to usher in a
-            better, more just and equitable world and to level the economic
-            playing field for all people. That’s a future I want to work toward.
-          </p>
-          <p>
-            I currently lead a team of native iOS and Android developers
-            building first-class user experiences. As a developer I work
-            primarily with JavaScript, both on the front end and the back end,
-            web and mobile. I’ve also done work in Swift, Python, Ruby and Java.
-          </p>
-          <p>
-            I co-founded the React Meetup in Charlotte, NC, and am active in
-            tech and crypto communities. I’m always looking for ways to create
-            and contribute.
+            As Director of Mobile Engineering, I currently lead a team of native
+            iOS and Android engineers. As a developer myself, I work primarily
+            with JavaScript, NodeJS, React and React Native targeting the web
+            and mobile platforms.
           </p>
         </div>
       </div>
