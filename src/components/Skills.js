@@ -52,16 +52,23 @@ Skill.propTypes = {
 };
 
 const Skills = () => (
-  <Section heading="Skills" description="Placeholder">
+  <Section heading="Technical Skills" description="A sampling.">
     <div className="o-grid">
-      <Skill skill="Photoshop" percent={80} />
-      <Skill skill="Illustrator" percent={75} />
-      <Skill skill="GIT" percent={70} />
-      <Skill skill="After Effects" percent={65} />
-      <Skill skill="Sketch" percent={90} />
-      <Skill skill="CSS3 Animation" percent={50} />
-      <Skill skill="Pagespeed Insights" percent={85} />
-      <Skill skill="SEO" percent={95} />
+      <Skill skill="JavaScript" percent={95} />
+      <Skill skill="React" percent={95} />
+      <Skill skill="React Native" percent={85} />
+      <Skill skill="Redux" percent={90} />
+      <Skill skill="NodeJS" percent={70} />
+      <Skill skill="TypeScript" percent={75} />
+      <Skill skill="Jamstack" percent={85} />
+      <Skill skill="GatsbyJS" percent={85} />
+      <Skill skill="GraphQL/Apollo" percent={85} />
+      <Skill skill="Styled Components" percent={80} />
+      <Skill skill="HTML/CSS/SCSS" percent={90} />
+      <Skill skill="Ruby/Rails" percent={55} />
+      <Skill skill="Swift" percent={50} />
+      <Skill skill="Blockchain" percent={85} />
+      <Skill skill="Agile/Scrum" percent={80} />
     </div>
   </Section>
 );

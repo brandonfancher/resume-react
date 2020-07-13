@@ -31,10 +31,10 @@ function App() {
         <Education />
         <Volunteer />
         <Skills />
-        <Profiles />
+        {/* <Profiles />
         <Awards />
         <Portfolio />
-        <Clients />
+        <Clients /> */}
         <Footer />
       </div>
     </>
