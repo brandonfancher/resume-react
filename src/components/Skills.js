@@ -65,8 +65,7 @@ const Skills = () => (
       <Skill skill="GraphQL/Apollo" percent={85} />
       <Skill skill="Styled Components" percent={80} />
       <Skill skill="HTML/CSS/SCSS" percent={90} />
-      <Skill skill="Ruby/Rails" percent={55} />
-      <Skill skill="Swift" percent={50} />
+      <Skill skill="Swift" percent={65} />
       <Skill skill="Blockchain" percent={85} />
       <Skill skill="Agile/Scrum" percent={80} />
     </div>

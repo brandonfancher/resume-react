@@ -8,7 +8,7 @@ const Volunteer = () => (
     <Timeline>
       <TimelineItem
         timeframe="Jun 2016 &ndash; Apr 2018"
-        heading="React Charlotte Meetup Group"
+        heading="React Charlotte Meetup"
         link="http://www.meetup.com/ReactJS-Charlotte/"
         title="Co-Founder, Organizer &amp; Speaker"
         location="Charlotte, NC USA"
@@ -57,6 +57,24 @@ const Volunteer = () => (
             thousands of monthly average users.
           </li>
         </ul>
+      </TimelineItem>
+      <TimelineItem
+        timeframe="Sep 2015 &ndash; Nov 2015"
+        heading="Skookum Night Shift"
+        link="https://skookum.com/blog/skookum-night-shift/"
+        title="Volunteer Developer"
+        location="Charlotte, NC USA"
+      >
+        <p>
+          Night Shift is an educational program at Skookum HQ in Charlotte, NC
+          in which participants learn, hack, teach, and build applications for
+          real clients and social causes.
+        </p>
+        <p>
+          Worked as a lead developer building a React web app for United Way of
+          Central Carolinas to raise awareness about poverty in the
+          Charlotte-Mecklenburg area.
+        </p>
       </TimelineItem>
     </Timeline>
   </Section>
