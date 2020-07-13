@@ -2188,6 +2188,9 @@ img[height] {
   margin-bottom: 0.825rem;
   text-align: left;
   transition: width 0.65s ease-out;
+  @media only screen and (hover: none) {
+    width: 15%;
+  }
 }
 
 .c-image-overlay:hover img {
@@ -2208,6 +2211,9 @@ img[height] {
   opacity: 0;
   padding: 1.75rem 1.75rem;
   transition: ease 0.6s;
+  @media only screen and (hover: none) {
+    opacity: 1;
+  }
 }
 
 .c-image-overlay:hover .c-image-overlay__content {

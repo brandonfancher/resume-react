@@ -11,7 +11,7 @@ import Awards from "./components/Awards";
 import Portfolio from "./components/Portfolio";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
-import "./assets/css/main.css";
+import "./assets/css/main.scss";
 import "./assets/css/custom.scss";
 import "./assets/css/themes.light.scss";
 import "./assets/css/themes.dark.scss";
@@ -31,10 +31,10 @@ function App() {
         <Education />
         <Volunteer />
         <Skills />
-        {/* <Profiles />
-        <Awards />
+        {/* <Profiles /> */}
+        {/* <Awards /> */}
         <Portfolio />
-        <Clients /> */}
+        {/* <Clients /> */}
         <Footer />
       </div>
     </>

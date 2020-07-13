@@ -155,6 +155,12 @@ hr,
   color: #3a3a3a;
 }
 
+.t-image-overlay img {
+  @media only screen and (hover: none) {
+    opacity: 0.2;
+  }
+}
+
 .t-image-overlay:hover img {
   opacity: 0.2;
 }
