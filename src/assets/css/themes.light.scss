@@ -7,7 +7,7 @@
 /* Body */
 body {
   background: #fff;
-  color: #939393;
+  color: $primary-text-color-light;
 }
 
 /* Heading */
@@ -18,6 +18,96 @@ h4,
 h5,
 h6 {
   color: #727272;
+}
+
+/* Form */
+input,
+textarea {
+  padding: 8px 16px;
+  &::placeholder {
+    color: $placeholder-text-color-light;
+  }
+}
+
+input,
+textarea,
+button {
+  border: 1px solid $border-color-light;
+  background-color: #f8f8f8;
+  color: $primary-text-color-light;
+  &:focus {
+    outline-color: $accent-color;
+  }
+}
+
+.contact-form {
+  display: grid;
+  padding-bottom: 2.5rem;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "name email"
+    "text text"
+    "butn butn";
+  column-gap: 1.75rem;
+  row-gap: 1.25rem;
+  @media (max-width: 600px) {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "name"
+      "email"
+      "text"
+      "butn";
+  }
+  input {
+    &[name="Name"] {
+      grid-area: name;
+    }
+    &[name="Email Address"] {
+      grid-area: email;
+    }
+  }
+  textarea {
+    grid-area: text;
+    min-height: 150px;
+    &:required {
+      box-shadow: none;
+    }
+  }
+  div#submit-form {
+    grid-area: butn;
+    justify-self: end;
+    button {
+      width: 54px;
+      height: 48px;
+      .sk-spinner,
+      .sk-spinner div {
+        width: 40px;
+        height: 40px;
+      }
+      .sk-spinner {
+        margin: 29px 26px;
+      }
+      &:disabled:hover {
+        background-color: #3f4040;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contact-result {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  &.error {
+    color: $accent-color;
+  }
 }
 
 /* Link Container */
@@ -41,6 +131,7 @@ a,
 .t-link-container .t-link-container__item,
 .t-link-container:hover .t-link-container__item--blended {
   color: $accent-color;
+  outline-color: $accent-color;
 }
 
 /* Hover Links */
@@ -54,12 +145,12 @@ a:active,
 /* Horizontal Rulers */
 hr,
 .t-border-color {
-  border-color: #ececec;
+  border-color: $border-color-light;
 }
 
 hr,
 .t-border-color-bg {
-  background: #ececec;
+  background: $border-color-light;
 }
 
 /* Primary Color */
@@ -79,9 +170,14 @@ hr,
   border-bottom-color: $accent-color;
 }
 
+/* Spinners */
+.sk-spinner {
+  color: $accent-color;
+}
+
 /* Brand Colors */
 .t-title__first-word {
-  color: #939393;
+  color: $primary-text-color-light;
 }
 
 .t-title__second-word {
@@ -89,7 +185,7 @@ hr,
 }
 
 .t-sub-title {
-  color: #939393;
+  color: $primary-text-color-light;
 }
 
 /* Brand Typography */
@@ -199,8 +295,8 @@ a .fa,
 
 @media (max-width: 1023px) {
   .t-section__header {
-    border-top: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
+    border-top: 1px solid $border-color-light;
+    border-bottom: 1px solid $border-color-light;
   }
   .t-section--header .t-section__header {
     border-top: none;

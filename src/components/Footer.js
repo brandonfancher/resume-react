@@ -4,17 +4,18 @@ import Section from "./Section";
 import SocialButtons, { SocialButtonsLocation } from "./SocialButtons";
 import ContactInfo from "./ContactInfo";
 import SiteTitle, { SiteTitleLocation, SiteTitleSize } from "./SiteTitle";
+import ContactForm from "./ContactForm";
 
 const Footer = () => {
   useScrollReveal(".a-footer");
 
   return (
     <Section heading="Contact" description="Let's connect!">
+      <ContactForm />
+      <hr className="c-footer__contact-divider" />
       <div className="c-footer__contact">
         <ContactInfo />
       </div>
-
-      <hr className="c-footer__contact-divider" />
 
       <div className="o-content">
         <div className="c-footer__bottom">
