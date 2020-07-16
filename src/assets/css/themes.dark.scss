@@ -7,7 +7,7 @@
 @media (prefers-color-scheme: dark) {
   body {
     background: #2d2e2e;
-    color: #979899;
+    color: $primary-text-color-dark;
   }
 
   /* Heading */
@@ -20,27 +20,20 @@
     color: #a4a5a6;
   }
 
-  /* Link Container */
-  .t-link-container {
-    color: inherit;
-    display: block;
+  /* Form */
+  input,
+  textarea,
+  button {
+    border: 1px solid $border-color-dark;
+    background-color: #292a2a;
+    color: $primary-text-color-dark;
+    &::placeholder {
+      color: $placeholder-text-color-dark;
+    }
   }
 
-  .t-link-container:hover,
-  .t-link-container:focus,
-  .t-link-container:active {
-    color: inherit;
-  }
-
-  .t-link-container .t-link-container__item--blended {
-    color: inherit;
-  }
-
-  /* Links */
-  a,
-  .t-link-container .t-link-container__item,
-  .t-link-container:hover .t-link-container__item--blended {
-    color: $accent-color;
+  .contact-form div#submit-form button:disabled:hover {
+    background-color: #3f4040;
   }
 
   /* Hover Links */
@@ -54,29 +47,12 @@
   /* Horizontal Rulers */
   hr,
   .t-border-color {
-    border-color: #404242;
+    border-color: $border-color-dark;
   }
 
   hr,
   .t-border-color-bg {
-    background: #404242;
-  }
-
-  /* Primary Color */
-  .t-primary-color,
-  .t-primary-color-line {
-    color: $accent-color;
-  }
-
-  .t-primary-bg,
-  .t-primary-color-line {
-    background: $accent-color;
-  }
-
-  /* Preloader */
-  .t-preloader__spinner:not(:required):before {
-    border-top-color: $accent-color;
-    border-bottom-color: $accent-color;
+    background: $border-color-dark;
   }
 
   /* Brand Colors */
@@ -84,34 +60,8 @@
     color: #a4a5a6;
   }
 
-  .t-title__second-word {
-    color: $accent-color;
-  }
-
   .t-sub-title {
-    color: #979899;
-  }
-
-  /* Brand Typography */
-  .t-title {
-    font-size: 4.8rem;
-    line-height: 0.91;
-  }
-
-  .t-title__first-word {
-    text-transform: lowercase;
-    font-weight: 300;
-  }
-
-  .t-title__second-word {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .t-sub-title {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin-left: 0.3rem;
+    color: $primary-text-color-dark;
   }
 
   /* Icons */
@@ -164,15 +114,6 @@
     background: #c0c1c1;
   }
 
-  /* Transition */
-  a,
-  button,
-  a .fa,
-  .t-link-container .t-link-container__item,
-  .t-link-container .t-link-container__item--blended {
-    transition: all 0.15s linear;
-  }
-
   /* Sections */
   .t-section__header {
     background: #282929;
@@ -193,12 +134,8 @@
 
   @media (max-width: 1023px) {
     .t-section__header {
-      border-top: 1px solid #404242;
-      border-bottom: 1px solid #404242;
-    }
-    .t-section--header .t-section__header {
-      border-top: none;
-      border-bottom: none;
+      border-top: 1px solid $border-color-dark;
+      border-bottom: 1px solid $border-color-dark;
     }
   }
 

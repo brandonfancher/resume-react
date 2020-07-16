@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Obfuscate from "react-obfuscate";
 
 export const ContactInfoLocation = {
   HEADER: "header",
@@ -28,19 +29,12 @@ const ContactInfo = ({ location }) => (
     </ContactInfoItem>
 
     <ContactInfoItem location={location}>
-      <a
-        href="mailto:brandonfancher@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="t-link-container"
-      >
-        <h4>Email</h4>
-        <p>
-          <span className="t-link-container__item--blended">
-            brandonfancher@gmail.com
-          </span>
-        </p>
-      </a>
+      <h4>Email</h4>
+      <p>
+        <span className="t-link-container__item--blended">
+          <Obfuscate email="brandonfancher@gmail.com" />
+        </span>
+      </p>
     </ContactInfoItem>
   </div>
 );
