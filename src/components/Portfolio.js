@@ -39,13 +39,13 @@ const Portfolio = () => (
     <div className="o-grid  o-grid--gallery">
       <PortfolioPiece
         title="Rivkah | Fine Art Photography"
-        description="Side Project: A responsive photography portfolio Jamstack site using React, Gatsby, Emotion, GraphQL, Prismic headless CMS, FlexSearch, and Netlify with CI/CD."
+        description="Side Project: A responsive Jamstack site using React, Gatsby, Emotion, GraphQL, Prismic CMS, FlexSearch and Netlify with CI/CD."
         link="https://rivkahfineart.com"
         image={rivkah}
       />
       <PortfolioPiece
         title="Charlotte Light Rail App"
-        description="Side Project: An open-source iOS transit app for the Charlotte community with thousands of monthly users. Built with React Native, React Navigation, Mapbox and Styled Components."
+        description="Side Project: An open-source iOS app with 1000s of monthly users. React Native, React Navigation, Mapbox and Styled Components."
         link="https://apps.apple.com/us/app/charlotte-light-rail/id1131471316"
         image={lightrail}
       />

@@ -2214,6 +2214,11 @@ img[height] {
   @media only screen and (hover: none) {
     opacity: 1;
   }
+  h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .c-image-overlay:hover .c-image-overlay__content {
