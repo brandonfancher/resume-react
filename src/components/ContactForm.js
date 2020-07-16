@@ -5,7 +5,7 @@ import Spinner from "react-spinkit";
 import { FaPaperPlane } from "react-icons/fa";
 
 const ContactForm = () => (
-  <NetlifyForm name="Contact Form" honeypotName="boomShakalaka">
+  <NetlifyForm name="contact-form" honeypotName="boomShakalaka">
     {({ loading, error, success }) => {
       if (error) {
         return (
@@ -30,20 +30,20 @@ const ContactForm = () => (
         <div className="contact-form">
           <input
             type="text"
-            name="Name"
+            name="name"
             placeholder="Name"
             required
             disabled={loading}
           />
           <input
             type="email"
-            name="Email Address"
+            name="email"
             placeholder="Email Address"
             required
             disabled={loading}
           />
           <textarea
-            name="Message"
+            name="message"
             placeholder="Message"
             required
             disabled={loading}
