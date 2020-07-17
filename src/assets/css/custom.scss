@@ -16,7 +16,10 @@
       color: #a4a5a6;
     }
     &:hover {
-      color: $accent-color;
+      color: $link-color-light;
+      @media (prefers-color-scheme: dark) {
+        color: $link-color-dark;
+      }
       cursor: pointer;
     }
   }

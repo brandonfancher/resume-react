@@ -30,10 +30,27 @@
     &::placeholder {
       color: $placeholder-text-color-dark;
     }
+    &:focus {
+      outline-color: $link-color-dark;
+    }
   }
 
   .contact-form div#submit-form button:disabled:hover {
     background-color: #3f4040;
+  }
+
+  .contact-result {
+    &.error {
+      color: $link-color-dark;
+    }
+  }
+
+  /* Links */
+  a,
+  .t-link-container .t-link-container__item,
+  .t-link-container:hover .t-link-container__item--blended {
+    color: $link-color-dark;
+    outline-color: $link-color-dark;
   }
 
   /* Hover Links */
@@ -55,9 +72,29 @@
     background: $border-color-dark;
   }
 
+  /* Primary Color */
+  .t-primary-color,
+  .t-primary-color-line {
+    color: $link-color-dark;
+  }
+
+  .t-primary-bg,
+  .t-primary-color-line {
+    background: $link-color-dark;
+  }
+
+  /* Spinners */
+  .sk-spinner {
+    color: $link-color-dark;
+  }
+
   /* Brand Colors */
   .t-title__first-word {
     color: #a4a5a6;
+  }
+
+  .t-title__second-word {
+    color: $link-color-dark;
   }
 
   .t-sub-title {
@@ -93,7 +130,7 @@
   .t-social-button:hover .far,
   .t-social-button:hover .fal,
   .t-social-button:hover .fab {
-    color: $accent-color;
+    color: $link-color-dark;
   }
 
   /* Image Overlay */
