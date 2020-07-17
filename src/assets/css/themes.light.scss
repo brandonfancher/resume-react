@@ -36,7 +36,7 @@ button {
   background-color: #f8f8f8;
   color: $primary-text-color-light;
   &:focus {
-    outline-color: $link-color-light;
+    outline-color: $accent-color-light;
   }
 }
 
@@ -106,7 +106,7 @@ button {
   text-align: center;
   padding-bottom: 2.5rem;
   &.error {
-    color: $link-color-light;
+    color: $accent-color-light;
   }
 }
 
@@ -130,8 +130,8 @@ button {
 a,
 .t-link-container .t-link-container__item,
 .t-link-container:hover .t-link-container__item--blended {
-  color: $link-color-light;
-  outline-color: $link-color-light;
+  color: $accent-color-light;
+  outline-color: $accent-color-light;
 }
 
 /* Hover Links */
@@ -139,7 +139,7 @@ a:hover,
 a:focus,
 a:active,
 .t-link-container:hover .t-link-container__item {
-  color: lighten($link-color-light, 15%);
+  color: lighten($accent-color-light, 15%);
   text-decoration: underline;
 }
 
@@ -157,17 +157,17 @@ hr,
 /* Primary Color */
 .t-primary-color,
 .t-primary-color-line {
-  color: $link-color-light;
+  color: $accent-color-light;
 }
 
 .t-primary-bg,
 .t-primary-color-line {
-  background: $link-color-light;
+  background: $accent-color-light;
 }
 
 /* Spinners */
 .sk-spinner {
-  color: $link-color-light;
+  color: $accent-color-light;
 }
 
 /* Brand Colors */
@@ -176,7 +176,7 @@ hr,
 }
 
 .t-title__second-word {
-  color: $link-color-light;
+  color: $accent-color-light;
 }
 
 .t-sub-title {
@@ -234,7 +234,7 @@ hr,
 .t-social-button:hover .far,
 .t-social-button:hover .fal,
 .t-social-button:hover .fab {
-  color: $link-color-light;
+  color: $accent-color-light;
 }
 
 /* Image Overlay */
