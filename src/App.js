@@ -15,26 +15,20 @@ import "./assets/css/themes.dark.scss";
 
 function App() {
   return (
-    <>
-      <div className="c-preloader  js-preloader">
-        <div className="c-preloader__spinner  t-preloader__spinner" />
-      </div>
-
-      <div className="c-main-container  js-main-container">
-        <Header />
-        <Intro />
-        <Expertise />
-        <Experience />
-        <Education />
-        <Volunteer />
-        <Skills />
-        {/* <Profiles /> */}
-        {/* <Awards /> */}
-        <Portfolio />
-        {/* <Clients /> */}
-        <Footer />
-      </div>
-    </>
+    <div className="c-main-container  js-main-container">
+      <Header />
+      <Intro />
+      <Expertise />
+      <Experience />
+      <Education />
+      <Volunteer />
+      <Skills />
+      {/* <Profiles /> */}
+      {/* <Awards /> */}
+      <Portfolio />
+      {/* <Clients /> */}
+      <Footer />
+    </div>
   );
 }
 

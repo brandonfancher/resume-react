@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #727272;
+  color: $heading-text-color-light;
 }
 
 /* Form */
@@ -106,7 +106,7 @@ button {
   text-align: center;
   padding-bottom: 2.5rem;
   &.error {
-    color: $accent-color;
+    color: $link-color-light;
   }
 }
 
@@ -130,8 +130,8 @@ button {
 a,
 .t-link-container .t-link-container__item,
 .t-link-container:hover .t-link-container__item--blended {
-  color: $accent-color;
-  outline-color: $accent-color;
+  color: $link-color-light;
+  outline-color: $link-color-light;
 }
 
 /* Hover Links */
@@ -156,18 +156,12 @@ hr,
 /* Primary Color */
 .t-primary-color,
 .t-primary-color-line {
-  color: $accent-color;
+  color: $link-color-light;
 }
 
 .t-primary-bg,
 .t-primary-color-line {
   background: $accent-color;
-}
-
-/* Preloader */
-.t-preloader__spinner:not(:required):before {
-  border-top-color: $accent-color;
-  border-bottom-color: $accent-color;
 }
 
 /* Spinners */
