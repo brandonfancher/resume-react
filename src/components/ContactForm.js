@@ -34,6 +34,7 @@ const ContactForm = () => (
             placeholder="Name"
             required
             disabled={loading}
+            aria-label="Full Name"
           />
           <input
             type="email"
@@ -41,12 +42,15 @@ const ContactForm = () => (
             placeholder="Email Address"
             required
             disabled={loading}
+            aria-label="Email Address"
           />
           <textarea
             name="message"
             placeholder="Message"
+            label="Message"
             required
             disabled={loading}
+            aria-label="Your Message"
           />
           <div id="submit-form">
             <button

@@ -7,13 +7,14 @@ export const SocialButtonsLocation = {
   FOOTER: "footer",
 };
 
-const SocialButton = ({ link, location, icon: Icon }) => (
+const SocialButton = ({ link, location, icon: Icon, label }) => (
   <li className={`a-${location}`}>
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
       className="c-social-button  t-social-button"
+      aria-label={label}
     >
       <Icon className="fab fa-lg" style={{ marginTop: 6 }} />
     </a>
@@ -24,6 +25,7 @@ SocialButton.propTypes = {
   link: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   icon: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 const SocialButtons = ({ location }) => (
@@ -32,16 +34,19 @@ const SocialButtons = ({ location }) => (
       link="https://linkedin.com/in/brandonfancher"
       location={location}
       icon={FaLinkedin}
+      label="LinkedIn Profile"
     />
     <SocialButton
       link="https://github.com/brandonfancher"
       location={location}
       icon={FaGithub}
+      label="Github Profile"
     />
     <SocialButton
       link="https://twitter.com/brandonfancher"
       location={location}
       icon={FaTwitter}
+      label="Twitter Profile"
     />
   </ul>
 );
