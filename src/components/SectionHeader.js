@@ -16,7 +16,7 @@ const SectionHeader = ({ heading, description }) => (
 
 SectionHeader.propTypes = {
   heading: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.node,
 };
 
 export default SectionHeader;

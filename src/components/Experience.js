@@ -4,7 +4,15 @@ import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
 
 const Experience = () => (
-  <Section heading="Experience" wrapperClasses="u-pb-0">
+  <Section
+    heading="Experience"
+    wrapperClasses="u-pb-0"
+    description={
+      <a href="/Resume - Brandon Fancher.pdf" target="_blank">
+        Download PDF.
+      </a>
+    }
+  >
     <Timeline begins={false}>
       <TimelineItem
         timeframe="Sep 2019 &ndash; Present"

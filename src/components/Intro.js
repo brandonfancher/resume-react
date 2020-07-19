@@ -17,6 +17,13 @@ const Intro = () => (
             with JavaScript, NodeJS, React and React Native targeting the web
             and mobile platforms.
           </p>
+          <p>
+            You can find out more about me below, or{" "}
+            <a href="/Resume - Brandon Fancher.pdf" target="_blank">
+              download my PDF resume
+            </a>
+            .
+          </p>
         </div>
       </div>
     </div>

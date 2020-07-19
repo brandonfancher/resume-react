@@ -27,7 +27,7 @@ const Section = ({ heading, description, wrapperClasses, children }) => (
 
 Section.propTypes = {
   heading: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  description: PropTypes.node,
   wrapperClasses: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   children: PropTypes.node.isRequired,
 };
