@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Section from "./Section";
+import voice from "../assets/images/portfolio/voice.jpg";
 import rivkah from "../assets/images/portfolio/rivkah.jpg";
 import lightrail from "../assets/images/portfolio/lightrail.jpg";
 
@@ -37,6 +38,12 @@ const Portfolio = () => (
     wrapperClasses="o-section__full-bottom-space"
   >
     <div className="o-grid  o-grid--gallery">
+      <PortfolioPiece
+        title="Voice - Social Media"
+        description="At Block.one: Native iOS and Android apps for the Voice.com social media platform built on EOSIO blockchain technology."
+        link="https://apps.apple.com/us/app/voice-social-media/id1503719897#?platform=iphone"
+        image={voice}
+      />
       <PortfolioPiece
         title="Rivkah | Fine Art Photography"
         description="Side Project: A responsive Jamstack site using React, Gatsby, Emotion, GraphQL, Prismic CMS, FlexSearch and Netlify with CI/CD."
