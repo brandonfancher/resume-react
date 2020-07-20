@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Section from "./Section";
 import voice from "../assets/images/portfolio/voice.jpg";
 import rivkah from "../assets/images/portfolio/rivkah.jpg";
+import sdks from "../assets/images/portfolio/sdks.jpg";
 import lightrail from "../assets/images/portfolio/lightrail.jpg";
 
 const PortfolioPiece = ({ title, description, link, image }) => (
@@ -55,6 +56,12 @@ const Portfolio = () => (
         description="Side Project: An open-source iOS app with 1000s of monthly users. React Native, React Navigation, Mapbox and Styled Components."
         link="https://apps.apple.com/us/app/charlotte-light-rail/id1131471316"
         image={lightrail}
+      />
+      <PortfolioPiece
+        title="Swift &amp; Java Blockchain SDKs"
+        description="At Block.one: Open-source SDK libraries for Swift &amp; Java for interacting with and building applications on top of EOSIO blockchains."
+        link="https://eos.io/news/eosio-software-release-native-sdks-for-swift-and-java/"
+        image={sdks}
       />
     </div>
   </Section>
