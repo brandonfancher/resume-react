@@ -31,16 +31,16 @@ SocialButton.propTypes = {
 const SocialButtons = ({ location }) => (
   <ul className="c-social-buttons  o-content__body">
     <SocialButton
+      link="https://github.com/brandonfancher/resume-react"
+      location={location}
+      icon={FaGithub}
+      label="Github Project"
+    />
+    <SocialButton
       link="https://linkedin.com/in/brandonfancher"
       location={location}
       icon={FaLinkedin}
       label="LinkedIn Profile"
-    />
-    <SocialButton
-      link="https://github.com/brandonfancher"
-      location={location}
-      icon={FaGithub}
-      label="Github Profile"
     />
     <SocialButton
       link="https://twitter.com/brandonfancher"
